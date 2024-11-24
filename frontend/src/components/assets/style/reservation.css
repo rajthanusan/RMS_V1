@@ -1,0 +1,99 @@
+
+ 
+@media (max-width: 768px) {
+    .reservation-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-left,
+    .form-right {
+      width: 100%;
+      padding: 20px 15px;  
+    }
+  
+    .form-left {
+      order: 2;  
+    }
+  
+    .form-right {
+      order: 1;  
+      background-size: cover;
+    }
+  
+    .input-wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .input-field {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+  }
+  
+   
+  @media (max-width: 480px) {
+    .reservation-form {
+      min-height: auto;  
+    }
+  
+    .form-left,
+    .form-right {
+      padding: 15px;
+    }
+  
+    .form-left .btn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .input-field {
+      font-size: 13px;
+    }
+  
+    textarea.input-field {
+      height: 100px;
+    }
+  
+    .form-text {
+      font-size: 14px;
+    }
+  
+    .headline-1 {
+      font-size: 22px;
+    }
+  }
+  
+   
+  @media (max-width: 375px) {
+    .form-left,
+    .form-right {
+      padding: 10px;
+    }
+  
+    .headline-1 {
+      font-size: 20px;
+    }
+  
+    .input-field {
+      font-size: 12px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    textarea.input-field {
+      height: 90px;
+    }
+  
+    .form-text {
+      font-size: 12px;
+    }
+  }

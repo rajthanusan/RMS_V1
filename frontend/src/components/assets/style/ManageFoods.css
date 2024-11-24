@@ -1,0 +1,193 @@
+.manage-foods .container {
+  background-color: hsl(0deg 0% 44.24%);
+  padding: 2rem;
+}
+
+.form {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.input-field1 {
+  background-color: hsl(0deg 0% 44.24%) !important;
+  color: var(--white);
+  border: 1px solid var(--quick-silver);
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+}
+
+.btn-secondary {
+  background-color: var(--gold-crayola);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  overflow-x: auto;  
+  table-layout: auto;  
+}
+
+ 
+.table {
+  border: 2px solid black;  
+  border-collapse: collapse;  
+  margin-top: 20px;  
+  word-wrap: break-word;  
+  overflow-x: auto;  
+}
+
+ 
+.table thead {
+  background-color: var(--white);
+  color: var(--smoky-black-1);
+  border-bottom: 2px solid black;  
+}
+
+.table thead th {
+  border: 1px solid black;  
+  padding: 10px;  
+  text-align: left;  
+  word-wrap: break-word;  
+}
+
+ 
+.table tbody {
+  background-color: var(--white);
+  color: var(--smoky-black-2);
+}
+
+.table tbody td {
+  border: 1px solid black;  
+  padding: 10px;  
+  text-align: left;  
+  word-wrap: break-word;  
+}
+
+ 
+.table img {
+  width: 50px;  
+  height: auto;  
+}
+
+ 
+
+ 
+@media (min-width: 1200px) {
+  .table {
+    table-layout: auto;  
+  }
+
+  .table img {
+    width: 50px;  
+  }
+}
+
+ 
+@media (max-width: 768px) {
+  .manage-foods .container {
+    padding: 1.5rem;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+
+  .input-field1 {
+    padding: 0.6rem;
+  }
+
+  .btn-secondary {
+    padding: 0.7rem 1.2rem;
+  }
+
+  .table th, .table td {
+    padding: 0.5rem;
+  }
+
+  .table img {
+    width: 40px;
+  }
+
+   
+  .table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;  
+  }
+}
+
+ 
+@media (min-width: 390px) and (max-width: 430px) {
+  .manage-foods .container {
+    padding: 1rem;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+
+  .input-field1 {
+    padding: 0.6rem;
+  }
+
+  .btn-secondary {
+    padding: 0.6rem 1rem;
+  }
+
+  .table th, .table td {
+    padding: 0.4rem;
+  }
+
+  .table img {
+    width: 35px;  
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+}
+
+ 
+@media (max-width: 375px) {
+  .manage-foods .container {
+    padding: 1rem;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+
+  .input-field1 {
+    padding: 0.5rem;
+  }
+
+  .btn-secondary {
+    padding: 0.6rem 1rem;
+  }
+
+  .table th, .table td {
+    padding: 0.4rem;
+  }
+
+  .table img {
+    width: 35px;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;  
+  }
+}

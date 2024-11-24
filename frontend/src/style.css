@@ -1,0 +1,45 @@
+ 
+.gallery__frame {
+    position: relative;  
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery__image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .gallery__navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .nav_btn {
+    background: transparent;  
+    border: none;  
+    cursor: pointer;  
+    outline: none;  
+    padding: 10px;  
+    transition: transform 0.3s;  
+  }
+  
+  .nav_btn:hover {
+    transform: scale(1.1);  
+  }
+  
+  .nav_btn svg {
+    fill: #333;  
+    width: 30px;  
+    height: 30px;  
+  }
+  

@@ -1,0 +1,197 @@
+ 
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: white;
+  font-size: 3rem;  
+  border: none;
+  cursor: pointer;
+  padding: 10px;  
+  border-radius: 50%;  
+  transition: transform 0.2s ease;  
+}
+
+.close-button:hover {
+  transform: scale(1.2);  
+  color: rgb(0, 0, 0);  
+}
+
+.section-title {
+  color: var(--gold-crayola);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;  
+  font-weight: 700;  
+}
+
+.section-subtitle {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;  
+  font-weight: 500;  
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;  
+}
+
+.filter-button {
+  background-color: hsl(0deg 0% 44.24%);
+  color: hsl(0, 0%, 100%);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--black-alpha-15);
+  transition: all 0.3s ease;  
+  cursor: pointer;
+}
+
+.filter-button.active,
+.filter-button:hover {
+  background-color: var(--gold-crayola);
+  color: var(--white);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  );  
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-card {
+  background-color: var(--white-alpha-10);
+  border-radius: 12px;  
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.photo-card:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);  
+}
+
+.card-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  margin: 0.5rem 0;
+  color: var(--white);
+  font-size: 1.1rem;  
+}
+
+.img-cover {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.card-banner:hover .img-cover {
+  filter: brightness(0.8);  
+}
+
+.btn-text {
+  color: var(--gold-crayola);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-text:hover {
+  text-decoration: underline;
+}
+
+ 
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;  
+  }
+
+  .section-subtitle {
+    font-size: 1rem;  
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    );  
+    gap: 1rem;  
+  }
+
+  .filter-button {
+    padding: 6px 12px;  
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;  
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;  
+  }
+
+  .filter-button {
+    font-size: 0.9rem;  
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(150px, 1fr)
+    );  
+  }
+
+  .photo-card {
+    border-radius: 8px;  
+  }
+
+  .img-cover {
+    height: auto;  
+  }
+}
